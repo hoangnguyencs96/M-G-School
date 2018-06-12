@@ -57,8 +57,7 @@ namespace WebMauGiao.Service.Models
 
         public long? DepartmentID { get; set; }
 
-        [StringLength(100)]
-        public string Role { get; set; }
+        public long? RoleID { get; set; }
 
         [Column(TypeName = "ntext")]
         public string Comment { get; set; }

@@ -62,7 +62,7 @@ namespace WebMauGiao.Service.Infrastructure
                 dbSet.Remove(obj);
         }
 
-        public virtual T GetSingleById(int id)
+        public virtual T GetSingleById(long id)
         {
             return dbSet.Find(id);
         }
