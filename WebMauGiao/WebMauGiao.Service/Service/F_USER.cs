@@ -25,5 +25,16 @@ namespace WebMauGiao.Service.Service
             }
             return 0;
         }
+        public bool AddUser(USER user)
+        {
+            var dbEntry = db.USERs.Where(p => p.UserName == user.UserName).ToList();
+            if(dbEntry.Count == 0)
+            {
+                db.USERs.Add(user);
+                db.SaveChanges();
+                return true;
+            }
+            return false;
+        }
     }
 }
