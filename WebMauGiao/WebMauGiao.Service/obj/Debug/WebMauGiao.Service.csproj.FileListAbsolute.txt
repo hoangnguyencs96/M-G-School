@@ -1,0 +1,10 @@
+D:\MTA\Learning\DEV\MAUGIAO\WebMauGiao\WebMauGiao.Service\bin\Debug\WebMauGiao.Service.dll.config
+D:\MTA\Learning\DEV\MAUGIAO\WebMauGiao\WebMauGiao.Service\bin\Debug\WebMauGiao.Service.dll
+D:\MTA\Learning\DEV\MAUGIAO\WebMauGiao\WebMauGiao.Service\bin\Debug\WebMauGiao.Service.pdb
+D:\MTA\Learning\DEV\MAUGIAO\WebMauGiao\WebMauGiao.Service\bin\Debug\EntityFramework.dll
+D:\MTA\Learning\DEV\MAUGIAO\WebMauGiao\WebMauGiao.Service\bin\Debug\EntityFramework.SqlServer.dll
+D:\MTA\Learning\DEV\MAUGIAO\WebMauGiao\WebMauGiao.Service\bin\Debug\EntityFramework.xml
+D:\MTA\Learning\DEV\MAUGIAO\WebMauGiao\WebMauGiao.Service\bin\Debug\EntityFramework.SqlServer.xml
+D:\MTA\Learning\DEV\MAUGIAO\WebMauGiao\WebMauGiao.Service\obj\Debug\WebMauGiao.Service.csprojResolveAssemblyReference.cache
+D:\MTA\Learning\DEV\MAUGIAO\WebMauGiao\WebMauGiao.Service\obj\Debug\WebMauGiao.Service.dll
+D:\MTA\Learning\DEV\MAUGIAO\WebMauGiao\WebMauGiao.Service\obj\Debug\WebMauGiao.Service.pdb

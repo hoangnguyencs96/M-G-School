@@ -17,7 +17,12 @@ namespace WebMauGiao.Service.Service
         }
         public List<string> GetListCredential(long RoleID)
         {
-            if (RoleID == 0) return db.PERMISSONs.Select(p => p.PermissionName).ToList();
+            if (RoleID == 0)
+            {
+                var data = db.PERMISSONs.Select(p => p.PermissionName).ToList();
+                data.Add("ADMIN");
+                return data;
+            }
             return (from a in db.ROLEs
                     join b in db.ROLE_PERMISSION on a.RoleID equals b.RoleID
                     join c in db.PERMISSONs on b.PermissionID equals c.PermissionID
