@@ -1,0 +1,40 @@
+﻿@using WebMauGiao.Service.Models
+@{
+    Layout = null;
+    List<EMPLOYEE> nhanvien = ViewBag.NhanVien;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <h3>Tạo tài khoản</h3>
+    <div> 
+        <label>Nhân viên</label>
+        <select id="employeeid">
+            <option value="0" selected> Chọn nhân viên</option>
+            @foreach(var item in nhanvien)
+            {
+                <option value="@item.EmployeeID">@item.Name</option>
+            }
+        </select>
+        <br><label>Tên đăng nhập</label> <input  type="text" id="username"/>
+        <br><label>Mật khẩu</label><input type="password" id="password" />
+        <br><label>Xác nhận mật khẩu</label><input type="password" id="repassword" />
+        <br><label>Loại tài khoản</label>
+        <select id="usertype">
+            <option value="1" selected>User</option>
+            <option value="0">Admin</option>
+            
+        </select>       
+    </div>
+    <br><button id="btnThemNV">Thêm nhân viên</button>
+    @*scripts*@
+    <script src="~/Assets/js/JavaScript.js"></script>
+</body>
+</html>
