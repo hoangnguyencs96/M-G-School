@@ -94,9 +94,9 @@
             Gets the mapping from algorithm to the minimum <see cref="T:Microsoft.IdentityModel.Tokens.AsymmetricSecurityKey"/>.KeySize for verifying signatures.
             </summary>
         </member>
-        <member name="M:Microsoft.IdentityModel.Tokens.AsymmetricSignatureProvider.GetHashAlgorithmString(System.String)">
+        <member name="M:Microsoft.IdentityModel.Tokens.AsymmetricSignatureProvider.GetHashAlgorithmName(System.String)">
             <summary>
-            Returns the algorithm name.
+            Returns the <see cref="T:System.Security.Cryptography.HashAlgorithmName"/> instance.
             </summary>
             <param name="algorithm">The hash algorithm to use to create the hash value.</param>
         </member>
@@ -1618,63 +1618,6 @@
             <summary>
             Log messages and codes
             </summary>
-        </member>
-        <member name="T:Microsoft.IdentityModel.Tokens.RSACryptoServiceProviderProxy">
-            <summary>
-            The purpose of this class is to ensure that we obtain an RsaCryptoServiceProvider that supports SHA-256 signatures.
-            If the original RsaCryptoServiceProvider doesn't support SHA-256, we create a new one using the same KeyContainer.
-            </summary>
-        </member>
-        <member name="M:Microsoft.IdentityModel.Tokens.RSACryptoServiceProviderProxy.#ctor(System.Security.Cryptography.RSACryptoServiceProvider)">
-            <summary>
-            Initializes an new instance of <see cref="T:Microsoft.IdentityModel.Tokens.RSACryptoServiceProviderProxy"/>.
-            </summary>
-            <param name="rsa"><see cref="T:System.Security.Cryptography.RSACryptoServiceProvider"/></param>
-        </member>
-        <member name="M:Microsoft.IdentityModel.Tokens.RSACryptoServiceProviderProxy.Finalize">
-            <summary>
-            Destructs the <see cref="T:Microsoft.IdentityModel.Tokens.RSACryptoServiceProviderProxy"/> instance.
-            </summary>
-        </member>
-        <member name="M:Microsoft.IdentityModel.Tokens.RSACryptoServiceProviderProxy.Dispose">
-            <summary>
-            Releases all resources used by the current instance of the <see cref="T:Microsoft.IdentityModel.Tokens.RSACryptoServiceProviderProxy"/> class.
-            </summary>
-        </member>
-        <member name="M:Microsoft.IdentityModel.Tokens.RSACryptoServiceProviderProxy.Decrypt(System.Byte[],System.Boolean)">
-            <summary>
-            Decrypts data with the System.Security.Cryptography.RSA algorithm.
-            </summary>
-            <param name="input">The data to be decrypted.</param>
-            <param name="fOAEP">true to perform direct System.Security.Cryptography.RSA decryption using OAEP padding (only available on a computer running Microsoft Windows XP or later);o
-            therwise, false to use PKCS#1 v1.5 padding.</param>
-            <returns></returns>
-        </member>
-        <member name="M:Microsoft.IdentityModel.Tokens.RSACryptoServiceProviderProxy.Encrypt(System.Byte[],System.Boolean)">
-            <summary>
-             Encrypts data with the System.Security.Cryptography.RSA algorithm.
-            </summary>
-            <param name="input">The data to be encrypted.</param>
-            <param name="fOAEP">true to perform direct System.Security.Cryptography.RSA encryption using OAEP padding (only available on a computer running Microsoft Windows XP or later); 
-            otherwise, false to use PKCS#1 v1.5 padding.</param>
-            <returns></returns>
-        </member>
-        <member name="M:Microsoft.IdentityModel.Tokens.RSACryptoServiceProviderProxy.SignData(System.Byte[],System.Object)">
-            <summary>
-            Computes the hash value of the specified byte array using the specified hash algorithm, and signs the resulting hash value.
-            </summary>
-            <param name="signingInput">The input byte array for which to compute the hash.</param>
-            <param name="hash">The hash algorithm to use to create the hash value. </param>
-            <returns>The <see cref="T:System.Security.Cryptography.RSA"/> Signature for the specified data.</returns>
-        </member>
-        <member name="M:Microsoft.IdentityModel.Tokens.RSACryptoServiceProviderProxy.VerifyData(System.Byte[],System.Object,System.Byte[])">
-            <summary>
-            Verifies that a digital signature is valid by determining the hash value in the signature using the provided public key and comparing it to the hash value of the provided data.
-            </summary>
-            <param name="signingInput">The input byte array.</param>
-            <param name="hash">The hash algorithm to use to create the hash value.</param>
-            <param name="signature">The signature byte array to be verified.</param>
-            <returns>true if the signature is valid; otherwise, false.</returns>
         </member>
         <member name="T:Microsoft.IdentityModel.Tokens.RsaSecurityKey">
             <summary>
