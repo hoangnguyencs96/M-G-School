@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,6 +44,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -84,10 +93,11 @@
       <HintPath>..\packages\Microsoft.IdentityModel.Tokens.5.2.2\lib\net451\Microsoft.IdentityModel.Tokens.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.IdentityModel.Tokens.Jwt, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.5.2.2\lib\net451\System.IdentityModel.Tokens.Jwt.dll</HintPath>
       <Private>True</Private>
@@ -99,16 +109,14 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web.Razor">
@@ -134,11 +142,58 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\css\main.css" />
+    <Content Include="Assets\css\util.css" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="Assets\fonts\Linearicons-Free-v1.0.0\icon-font.min.css" />
+    <Content Include="Assets\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.svg" />
+    <Content Include="Assets\fonts\montserrat\OFL.txt" />
+    <Content Include="Assets\fonts\ubuntu\UFL.txt" />
+    <Content Include="Assets\images\icons\favicon.ico" />
+    <Content Include="Assets\images\icons\icon-google.png" />
+    <Content Include="Assets\images\icons\map-marker.png" />
+    <Content Include="Assets\images\icons\symbol-01.png" />
     <Content Include="Assets\js\JavaScript.js" />
+    <Content Include="Assets\js\main.js" />
+    <Content Include="Assets\vendor\animate\animate.css" />
+    <Content Include="Assets\vendor\animsition\css\animsition.css" />
+    <Content Include="Assets\vendor\animsition\css\animsition.min.css" />
+    <Content Include="Assets\vendor\animsition\js\animsition.js" />
+    <Content Include="Assets\vendor\animsition\js\animsition.min.js" />
+    <Content Include="Assets\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Assets\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Assets\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Assets\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Assets\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Assets\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Assets\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Assets\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Assets\vendor\bootstrap\js\popper.js" />
+    <Content Include="Assets\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="Assets\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="Assets\vendor\countdowntime\countdowntime.js" />
+    <Content Include="Assets\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="Assets\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="Assets\vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="Assets\vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="Assets\vendor\daterangepicker\moment.js" />
+    <Content Include="Assets\vendor\daterangepicker\moment.min.js" />
+    <Content Include="Assets\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="Assets\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="Assets\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="Assets\vendor\select2\select2.css" />
+    <Content Include="Assets\vendor\select2\select2.js" />
+    <Content Include="Assets\vendor\select2\select2.min.css" />
+    <Content Include="Assets\vendor\select2\select2.min.js" />
     <Content Include="Global.asax" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -159,7 +214,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -170,6 +227,94 @@
     <Content Include="Views\Test\Index_snd.cshtml" />
     <Content Include="Views\Account\Index.cshtml" />
     <Content Include="Views\Account\Create.cshtml" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="Assets\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="Assets\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.eot" />
+    <Content Include="Assets\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.ttf" />
+    <Content Include="Assets\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff" />
+    <Content Include="Assets\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff2" />
+    <Content Include="Assets\fonts\montserrat\Montserrat-Black.ttf" />
+    <Content Include="Assets\fonts\montserrat\Montserrat-BlackItalic.ttf" />
+    <Content Include="Assets\fonts\montserrat\Montserrat-Bold.ttf" />
+    <Content Include="Assets\fonts\montserrat\Montserrat-BoldItalic.ttf" />
+    <Content Include="Assets\fonts\montserrat\Montserrat-ExtraBold.ttf" />
+    <Content Include="Assets\fonts\montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <Content Include="Assets\fonts\montserrat\Montserrat-ExtraLight.ttf" />
+    <Content Include="Assets\fonts\montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <Content Include="Assets\fonts\montserrat\Montserrat-Italic.ttf" />
+    <Content Include="Assets\fonts\montserrat\Montserrat-Light.ttf" />
+    <Content Include="Assets\fonts\montserrat\Montserrat-LightItalic.ttf" />
+    <Content Include="Assets\fonts\montserrat\Montserrat-Medium.ttf" />
+    <Content Include="Assets\fonts\montserrat\Montserrat-MediumItalic.ttf" />
+    <Content Include="Assets\fonts\montserrat\Montserrat-Regular.ttf" />
+    <Content Include="Assets\fonts\montserrat\Montserrat-SemiBold.ttf" />
+    <Content Include="Assets\fonts\montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <Content Include="Assets\fonts\montserrat\Montserrat-Thin.ttf" />
+    <Content Include="Assets\fonts\montserrat\Montserrat-ThinItalic.ttf" />
+    <Content Include="Assets\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="Assets\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="Assets\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="Assets\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="Assets\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="Assets\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="Assets\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="Assets\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="Assets\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="Assets\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="Assets\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="Assets\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="Assets\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="Assets\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="Assets\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="Assets\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="Assets\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="Assets\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="Assets\fonts\ubuntu\Ubuntu-Bold.ttf" />
+    <Content Include="Assets\fonts\ubuntu\Ubuntu-BoldItalic.ttf" />
+    <Content Include="Assets\fonts\ubuntu\Ubuntu-Italic.ttf" />
+    <Content Include="Assets\fonts\ubuntu\Ubuntu-Light.ttf" />
+    <Content Include="Assets\fonts\ubuntu\Ubuntu-LightItalic.ttf" />
+    <Content Include="Assets\fonts\ubuntu\Ubuntu-Medium.ttf" />
+    <Content Include="Assets\fonts\ubuntu\Ubuntu-MediumItalic.ttf" />
+    <Content Include="Assets\fonts\ubuntu\Ubuntu-Regular.ttf" />
+    <Content Include="Assets\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Assets\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Assets\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Assets\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Assets\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Assets\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="Properties\PublishProfiles\MG.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -179,10 +324,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Assets\css\" />
-    <Folder Include="Assets\fonts\" />
-    <Folder Include="Assets\images\" />
-    <Folder Include="Assets\vendor\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

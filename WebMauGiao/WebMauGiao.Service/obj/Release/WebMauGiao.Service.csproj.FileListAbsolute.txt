@@ -1,0 +1,10 @@
+D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao.Service\bin\Release\WebMauGiao.Service.dll.config
+D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao.Service\bin\Release\WebMauGiao.Service.dll
+D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao.Service\bin\Release\WebMauGiao.Service.pdb
+D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao.Service\bin\Release\EntityFramework.dll
+D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao.Service\bin\Release\EntityFramework.SqlServer.dll
+D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao.Service\bin\Release\EntityFramework.xml
+D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao.Service\bin\Release\EntityFramework.SqlServer.xml
+D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao.Service\obj\Release\WebMauGiao.Service.csprojResolveAssemblyReference.cache
+D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao.Service\obj\Release\WebMauGiao.Service.dll
+D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao.Service\obj\Release\WebMauGiao.Service.pdb
