@@ -21,5 +21,7 @@ namespace WebMauGiao.Service.Models
         public decimal? Amount { get; set; }
 
         public bool? Status { get; set; }
+
+        public decimal? PaidAmount { get; set; }
     }
 }

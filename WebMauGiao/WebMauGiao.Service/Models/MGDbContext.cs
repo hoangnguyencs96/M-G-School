@@ -24,6 +24,7 @@ namespace WebMauGiao.Service.Models
         public virtual DbSet<FOOD_TYPE> FOOD_TYPE { get; set; }
         public virtual DbSet<FUND> FUNDs { get; set; }
         public virtual DbSet<FUND_TYPE> FUND_TYPE { get; set; }
+        public virtual DbSet<LOG> LOGs { get; set; }
         public virtual DbSet<MATERIAL> MATERIALs { get; set; }
         public virtual DbSet<MATERIAL_PROVIDER> MATERIAL_PROVIDER { get; set; }
         public virtual DbSet<PAYMENT> PAYMENTs { get; set; }
@@ -90,6 +91,26 @@ namespace WebMauGiao.Service.Models
                 .Property(e => e.Amount)
                 .HasPrecision(18, 0);
 
+            modelBuilder.Entity<LOG>()
+                .Property(e => e.Thread)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<LOG>()
+                .Property(e => e.Level)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<LOG>()
+                .Property(e => e.Logger)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<LOG>()
+                .Property(e => e.Message)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<LOG>()
+                .Property(e => e.Exception)
+                .IsUnicode(false);
+
             modelBuilder.Entity<MATERIAL>()
                 .Property(e => e.Price)
                 .HasPrecision(18, 0);
@@ -100,6 +121,10 @@ namespace WebMauGiao.Service.Models
 
             modelBuilder.Entity<PAYMENT_BILL>()
                 .Property(e => e.Amount)
+                .HasPrecision(18, 0);
+
+            modelBuilder.Entity<PAYMENT_BILL>()
+                .Property(e => e.PaidAmount)
                 .HasPrecision(18, 0);
 
             modelBuilder.Entity<SALARY>()

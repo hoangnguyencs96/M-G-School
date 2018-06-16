@@ -7,104 +7,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login V10</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="/Assets/images/icons/favicon.ico" />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/Assets/vendor/bootstrap/css/bootstrap.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/Assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/Assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/Assets/vendor/animate/animate.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/Assets/vendor/css-hamburgers/hamburgers.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/Assets/vendor/animsition/css/animsition.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/Assets/vendor/select2/select2.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/Assets/vendor/daterangepicker/daterangepicker.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/Assets/css/util.css">
-    <link rel="stylesheet" type="text/css" href="/Assets/css/main.css">
-    <!--===============================================================================================-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>Đăng nhập</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <meta name="description" content="User login page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- bootstrap & fontawesome -->
+    <link rel="stylesheet" href="/Assets/View/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/Assets/View/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+    <!-- text fonts -->
+    <link rel="stylesheet" href="/Assets/View/css/fonts.googleapis.com.css" />
+
+    <!-- ace styles -->
+    <link rel="stylesheet" href="/Assets/View/css/ace.min.css" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/Assets/View/css/ace-part2.min.css" />
+    <![endif]-->
+    <link rel="stylesheet" href="/Assets/View/css/ace-rtl.min.css" />
+
+    
+
+    <!--[if lte IE 9]>
+      <link rel="stylesheet" href="/Assets/View/css/ace-ie.min.css" />
+    <![endif]-->
+    <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+    <!--[if lte IE 8]>
+    <script src="/Assets/View/js/html5shiv.min.js"></script>
+    <script src="/Assets/View/js/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
 
-    <div class="limiter">
-        <div class="container-login100">
-            <div class="wrap-login100 p-t-50 p-b-90">
-                <form class="login100-form validate-form flex-sb flex-w" action="/Login/Login" method="post">
-                    <span class="login100-form-title p-b-51">
-                        Login
-                    </span>
-                    @if (Notif != null)
-                    {
-                        <div class="alert alert-warning">
-                            <strong>Lỗi !</strong> @Notif
-                        </div>
-                    }
-
-                    <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
-                        <input class="input100" type="text" name="username" placeholder="Username">
-                        <span class="focus-input100"></span>
-                    </div>
-
-
-                    <div class="wrap-input100 validate-input m-b-16" data-validate="Password is required">
-                        <input class="input100" type="password" name="password" placeholder="Password">
-                        <span class="focus-input100"></span>
-                    </div>
-
-                    @*<div class="flex-sb-m w-full p-t-3 p-b-24">
-                        <div class="contact100-form-checkbox">
-                            <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember">
-                            <label class="label-checkbox100" for="ckb1">
-                                Remember me
-                            </label>
+<body class="login-layout light-login">
+    <div class="main-container">
+        <div class="main-content">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="login-container">
+                        <div class="center">
+                            <h1>
+                                <i class="ace-icon fa fa-leaf green"></i>
+                                <span class="red">LA</span>
+                                <span class="grey" id="id-text2">Student</span>
+                            </h1>
+                            <h4 class="blue" id="id-company-text">&copy; Mẫu giáo</h4>
                         </div>
 
-                        <div>
-                            <a href="#" class="txt1">
-                                Forgot?
-                            </a>
-                        </div>
-                    </div>*@
+                        <div class="space-6"></div>
 
-                    <div class="container-login100-form-btn m-t-17">
-                        <button class="login100-form-btn">
-                            Login
-                        </button>
+                        <div class="position-relative">
+                            <div id="login-box" class="login-box visible widget-box no-border">
+                                <div class="widget-body">
+                                    <div class="widget-main">
+                                        <h4 class="header blue lighter bigger">
+                                            <i class="ace-icon fa fa-coffee green"></i>
+                                            Đăng nhập
+                                        </h4>
+
+                                        <div class="space-6"></div>
+
+                                        <form action="Login/Login" method="post">
+                                            <fieldset>
+                                                <label class="block clearfix">
+                                                    <span class="block input-icon input-icon-right">
+                                                        <input type="text" class="form-control" placeholder="Username" name="username"/>
+                                                        <i class="ace-icon fa fa-user"></i>
+                                                    </span>
+                                                </label>
+
+                                                <label class="block clearfix">
+                                                    <span class="block input-icon input-icon-right">
+                                                        <input type="password" class="form-control" placeholder="Password" name="password"/>
+                                                        <i class="ace-icon fa fa-lock"></i>
+                                                    </span>
+                                                </label>
+
+                                                <div class="space"></div>
+
+                                                <div class="clearfix">
+                                                    <label class="inline">
+                                                        
+                                                    </label>
+
+                                                    <button type="submit" class="width-35 pull-right btn btn-sm btn-primary">
+                                                        <i class="ace-icon fa fa-key"></i>
+                                                        <span class="bigger-110">Đăng nhập</span>
+                                                    </button>
+                                                </div>
+
+                                                <div class="space-4"></div>
+                                            </fieldset>
+                                        </form>
+
+                                        
+                                    </div><!-- /.widget-main -->
+                                </div><!-- /.widget-body -->
+                            </div><!-- /.login-box -->
+
+
+                        </div><!-- /.position-relative -->
                     </div>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.main-content -->
+    </div><!-- /.main-container -->
+    <!-- basic scripts -->
+    <!--[if !IE]> -->
+    <script src="/Assets/View/js/jquery-2.1.4.min.js"></script>
 
-                </form>
-            </div>
-        </div>
-    </div>
+    <!-- <![endif]-->
+    <!--[if IE]>
+    <script src="/Assets/View/js/jquery-1.11.3.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='/Assets/View/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+    </script>
 
+    <!-- inline scripts related to this page -->
+    <script type="text/javascript">
+			jQuery(function($) {
+			 $(document).on('click', '.toolbar a[data-target]', function(e) {
+				e.preventDefault();
+				var target = $(this).data('target');
+				$('.widget-box.visible').removeClass('visible');//hide others
+				$(target).addClass('visible');//show target
+			 });
+			});
 
-    <div id="dropDownSelect1"></div>
+	
 
-    <!--===============================================================================================-->
-    <script src="/Assets/vendor/jquery/jquery-3.2.1.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="/Assets/vendor/animsition/js/animsition.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="/Assets/vendor/bootstrap/js/popper.js"></script>
-    <script src="/Assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="/Assets/vendor/select2/select2.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="/Assets/vendor/daterangepicker/moment.min.js"></script>
-    <script src="/Assets/vendor/daterangepicker/daterangepicker.js"></script>
-    <!--===============================================================================================-->
-    <script src="/Assets/vendor/countdowntime/countdowntime.js"></script>
-    <!--===============================================================================================-->
-    <script src="/Assets/js/main.js"></script>
-
+    </script>
 </body>
 </html>
+
+

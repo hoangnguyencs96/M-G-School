@@ -122,3 +122,5 @@ D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao\obj\Debug\WebMauG
 D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao\obj\Debug\WebMauGiao.pdb
 D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao\bin\EntityFramework.SqlServer.dll
 D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao\bin\EntityFramework.SqlServer.xml
+D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao\bin\log4net.dll
+D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao\bin\log4net.xml

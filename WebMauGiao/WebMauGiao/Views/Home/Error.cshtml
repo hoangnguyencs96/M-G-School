@@ -1,18 +1,50 @@
 ﻿
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Error</title>
-</head>
-<body>
-    <div> 
-        403 Fobiden
-    </div>
-</body>
-</html>
+<div class="page-content">
+
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- PAGE CONTENT BEGINS -->
+
+            <div class="error-container">
+                <div class="well">
+                    <h1 class="grey lighter smaller">
+                        <span class="blue bigger-125">
+                            <i class="ace-icon fa fa-random"></i>
+                            403
+                        </span>
+                        Bạn không có quyền truy cập vào trang này
+                    </h1>
+
+                    <hr />
+                    <h3 class="lighter smaller">
+                        Vui lòng liên hệ với người quản trị
+                    </h3>
+
+                    <div class="space"></div>
+
+                    <div>
+                        <h4 class="lighter smaller">Bạn vui lòng</h4>
+
+                        <ul class="list-unstyled spaced inline bigger-110 margin-15">
+                            <li>
+                                <i class="ace-icon fa fa-hand-o-right blue"></i>
+                                <a href="/Home/Index">Quay về trang chính</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr />
+                    <div class="space"></div>
+                </div>
+            </div>
+
+            <!-- PAGE CONTENT ENDS -->
+        </div><!-- /.col -->
+    </div><!-- /.row -->
+</div><

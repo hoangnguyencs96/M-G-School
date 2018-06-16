@@ -68,6 +68,7 @@
     <Compile Include="Models\FOOD_TYPE.cs" />
     <Compile Include="Models\FUND.cs" />
     <Compile Include="Models\FUND_TYPE.cs" />
+    <Compile Include="Models\LOG.cs" />
     <Compile Include="Models\MATERIAL.cs" />
     <Compile Include="Models\MATERIAL_PROVIDER.cs" />
     <Compile Include="Models\MGDbContext.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="Service\F_FOOD_TYPE.cs" />
     <Compile Include="Service\F_FUND.cs" />
     <Compile Include="Service\F_FUND_TYPE.cs" />
+    <Compile Include="Service\F_LOG.cs" />
     <Compile Include="Service\F_MATERIAL.cs" />
     <Compile Include="Service\F_MATERIAL_PROVIDER.cs" />
     <Compile Include="Service\F_PAYMENT.cs" />
