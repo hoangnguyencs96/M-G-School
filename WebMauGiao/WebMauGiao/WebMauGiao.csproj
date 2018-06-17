@@ -146,6 +146,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\js\Student.js" />
     <Content Include="Assets\View\css\ace-ie.min.css" />
     <Content Include="Assets\View\css\ace-part2.min.css" />
     <Content Include="Assets\View\css\ace-rtl.min.css" />
@@ -291,6 +292,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\SecurityController.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Filters\AuthenticationModule.cs" />
     <Compile Include="Filters\JWTAuthenticationAttribute.cs" />
@@ -323,9 +325,13 @@
     <Content Include="Assets\View\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Assets\View\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Assets\View\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Assets\View\js\dataTables.bootstrap.min.js" />
     <None Include="Properties\PublishProfiles\MG.pubxml" />
     <Content Include="Views\Home\ViewLog.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Student\ListStudent.cshtml" />
+    <Content Include="Views\Student\RollCall.cshtml" />
+    <Content Include="Views\Student\ClassArranger.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

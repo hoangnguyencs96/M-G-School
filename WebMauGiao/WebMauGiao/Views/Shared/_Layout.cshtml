@@ -1,4 +1,4 @@
-﻿@{ 
+﻿@{
     var session = (WebMauGiao.Common.UserLogin)Session[WebMauGiao.Common.CommonConstants.USER_SESSION];
 
 }
@@ -431,76 +431,28 @@
 
                     <ul class="submenu">
                         <li class="">
-                            <a href="#" class="dropdown-toggle">
+                            <a href="/Student/ListStudent">
                                 <i class="menu-icon fa fa-caret-right"></i>
-
                                 Danh sách học sinh
-                                <b class="arrow fa fa-angle-down"></b>
                             </a>
 
                             <b class="arrow"></b>
 
-                            @*<ul class="submenu">
-                                <li class="">
-                                    <a href="top-menu.html">
-                                        <i class="menu-icon fa fa-caret-right"></i>
-                                        Top Menu
-                                    </a>
 
-                                    <b class="arrow"></b>
-                                </li>
-
-                                <li class="">
-                                    <a href="two-menu-1.html">
-                                        <i class="menu-icon fa fa-caret-right"></i>
-                                        Two Menus 1
-                                    </a>
-
-                                    <b class="arrow"></b>
-                                </li>
-
-                                <li class="">
-                                    <a href="two-menu-2.html">
-                                        <i class="menu-icon fa fa-caret-right"></i>
-                                        Two Menus 2
-                                    </a>
-
-                                    <b class="arrow"></b>
-                                </li>
-
-                                <li class="">
-                                    <a href="mobile-menu-1.html">
-                                        <i class="menu-icon fa fa-caret-right"></i>
-                                        Default Mobile Menu
-                                    </a>
-
-                                    <b class="arrow"></b>
-                                </li>
-
-                                <li class="">
-                                    <a href="mobile-menu-2.html">
-                                        <i class="menu-icon fa fa-caret-right"></i>
-                                        Mobile Menu 2
-                                    </a>
-
-                                    <b class="arrow"></b>
-                                </li>
-
-                                <li class="">
-                                    <a href="mobile-menu-3.html">
-                                        <i class="menu-icon fa fa-caret-right"></i>
-                                        Mobile Menu 3
-                                    </a>
-
-                                    <b class="arrow"></b>
-                                </li>
-                            </ul>*@
                         </li>
 
                         <li class="">
-                            <a href="typography.html">
+                            <a href="/Student/RollCall">
                                 <i class="menu-icon fa fa-caret-right"></i>
-                                Lên lớp, Xếp lớp
+                                Lên lớp
+                            </a>
+
+                            <b class="arrow"></b>
+                        </li>
+                        <li class="">
+                            <a href="/Student/ClassArranger">
+                                <i class="menu-icon fa fa-caret-right"></i>
+                                Xếp lớp
                             </a>
 
                             <b class="arrow"></b>
@@ -514,7 +466,7 @@
 
                             <b class="arrow"></b>
                         </li>
-                     
+
                     </ul>
                 </li>
 
@@ -590,7 +542,7 @@
                         <li class="">
                             <a href="form-elements-2.html">
                                 <i class="menu-icon fa fa-caret-right"></i>
-                                Sức khỏe 
+                                Sức khỏe
                             </a>
 
                             <b class="arrow"></b>
@@ -679,8 +631,10 @@
                         </form>
                     </div><!-- /.nav-search -->
                 </div>
-                @RenderBody()
-                
+                <div class="page-content">
+                    @RenderBody()
+                </div>
+
             </div>
         </div><!-- /.main-content -->
 
@@ -729,7 +683,8 @@
     <!-- ace scripts -->
     <script src="/Assets/View/js/ace-elements.min.js"></script>
     <script src="/Assets/View/js/ace.min.js"></script>
-
-    <!-- inline scripts related to this page -->   
+    @RenderSection("Student",required:false)
+    @RenderSection("Log", required: false)
+    <!-- inline scripts related to this page -->
 </body>
 </html>

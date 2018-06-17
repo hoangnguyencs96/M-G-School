@@ -1,0 +1,280 @@
+﻿
+@{
+    ViewBag.Title = "ListStudent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Student{
+    <script src="/Assets/View/js/jquery.maskedinput.min.js"></script>
+    <script src="/Assets/js/Student.js"></script>
+}
+
+<style>
+    select {
+        width: 100%;
+    }
+</style>
+<div class="page-header">
+    <h1 style="padding-left:50px;">
+        <small>Chọn lớp:</small>
+        <small style="padding-left:20px;">
+            <select style="width:200px;">
+                <option selected> Tất cả</option>
+                <option>Lớp 1</option>
+                <option>Lớp 2</option>
+            </select>
+        </small>
+    </h1>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-3">
+        <div class="widget-box">
+            <div class="widget-header">
+                <h4 class="widget-title">Danh sách học sinh</h4>
+            </div>
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Tên</th>
+                        <th>Giới tính</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr role="button">
+                        <td>Lê Văn A</td>
+                        <td>Nam</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-9">
+
+        <form class="form-horizontal" role="form">
+            <div class="row">
+                <div class="widget-box col-sm-7">
+                    <div class="widget-header" style="margin-bottom:20px;">
+                        <h4 class="widget-title">Thông tin chi tiết</h4>
+                    </div>
+                    <div class="widget-body">
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label class="col-sm-4 control-label no-padding-right"> Họ và tên </label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" id="form-field-1" placeholder="Họ tên đầy đủ" />
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label class="col-sm-6 control-label no-padding-right"> Giới tính</label>
+
+                                <div class="col-sm-6">
+                                    <select>
+                                        <option value="1" selected>Nam</option>
+                                        <option value="2">Nữ</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label class="col-sm-4 control-label no-padding-right"> Ngày sinh</label>
+
+                                <div class="col-sm-8">
+                                    <input type="date" id="form-field-1" placeholder="Password" />
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label class="col-sm-6 control-label no-padding-right" for="form-field-1-1"> Đối tg ưu tiên</label>
+
+                                <div class="col-sm-6">
+                                    <select>
+                                        <option value="1" selected>Đối tượng 1</option>
+                                        <option value="2">Đối tượng 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label no-padding-right" for="form-field-2">Địa chỉ </label>
+
+                            <div class="col-sm-10">
+                                <input type="text" id="form-field-2" placeholder="Nhập chính xác dịa chỉ" style="width:100%" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label class="col-sm-4 control-label no-padding-right" for="form-field-1"> Dân tộc </label>
+                                <div class="col-sm-8">
+                                    <select>
+                                        <option value="1" selected>Nam</option>
+                                        <option value="2">Nữ</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label class="col-sm-6 control-label no-padding-right" for="form-field-1"> Lớp</label>
+
+                                <div class="col-sm-6">
+                                    <select>
+                                        <option value="1" selected>Nam</option>
+                                        <option value="2">Nữ</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label class="col-sm-4 control-label no-padding-right" for="form-field-1"> Tôn giáo </label>
+                                <div class="col-sm-8">
+                                    <select>
+                                        <option value="1" selected>Nam</option>
+                                        <option value="2">Nữ</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label class="col-sm-6 control-label no-padding-right" for="form-field-1"> Năm học</label>
+
+                                <div class="col-sm-6">
+                                    <select>
+                                        <option value="1" selected>Nam</option>
+                                        <option value="2">Nữ</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-box col-sm-5">
+                    <div class="widget-header" style="margin-bottom:20px;">
+                        <h4 class="widget-title">Hình ảnh</h4>
+                    </div>
+                    <div class="widget-body">
+                        <div class="row">
+                            <div class="col-sm-6" id="student_img" style="width:120px;height:160px;border:solid 1px #f00;margin:0 20px 83px 25px;">
+                                <img class="img-responsive" />
+                            </div>
+                            <div class="col-sm-6" style="padding-top:100px;">
+                                <button type="button" class="btn btn-primary">Chọn ảnh mới</button>       
+                                <input type="file" style="margin-top:15px;width:150px"  />                       
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="widget-box col-sm-7">
+                    <div class="widget-header" style="margin-bottom:20px;">
+                        <h4 class="widget-title">Thông tin phụ huynh</h4>
+                    </div>
+                    <div class="widget-body">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label no-padding-right" for="form-field-2">Họ tên bố </label>
+
+                            <div class="col-sm-10">
+                                <input type="text" id="form-field-2" placeholder="Nhập họ tên dầy đủ" style="width:100%" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label no-padding-right" for="form-field-2">Số ĐT bố </label>
+                            <div class="col-sm-10" style="margin:0;">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="ace-icon fa fa-phone"></i>
+                                    </span>
+
+                                    <input class="form-control input-mask-phone" type="text" id="form-field-mask-2" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label no-padding-right" for="form-field-2">Họ tên mẹ </label>
+
+                            <div class="col-sm-10">
+                                <input type="text" id="form-field-2" placeholder="Nhập họ tên dầy đủ" style="width:100%" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label no-padding-right" for="form-field-2">Số ĐT Mẹ</label>
+
+                            <div class="col-sm-10" style="margin:0;">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="ace-icon fa fa-phone"></i>
+                                    </span>
+
+                                    <input class="form-control input-mask-phone" type="text" id="form-field-mask-2" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label no-padding-right" for="form-field-2">Email</label>
+
+                            <div class="col-sm-10">
+                                <input type="email" id="form-field-2" placeholder="example@gmail.com" style="width:100%" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label no-padding-right" for="form-field-2">Ghi chú của phụ huynh </label>
+
+                            <div class="col-sm-10">
+                                <textarea type="text" id="form-field-2" style="width:100%"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-box col-sm-5" style="height:381px;">
+                    <div class="widget-header" style="margin-bottom:20px;">
+                        <h4 class="widget-title">Trạnh thái học sinh</h4>
+                    </div>
+                    <div class="widget-body">
+                        <div class="row">
+                            <div class="col-sm-6" style="padding-left:50px;">
+                                <label class="control-label">Ngày vào học</label>
+                                <input type="date" value="@DateTime.Today.ToString("yyyy-MM-dd")" />
+                                <div class="row" style="margin:15px;">
+                                    <input class="ace" type="checkbox" id="id-disable-check" />
+                                    <span class="lbl"> Đã nghỉ học</span>
+                                </div>
+                                <label class="control-label">Ngày nghỉ học</label>
+                                <input type="date" value="@DateTime.Today.ToString("yyyy-MM-dd")" disabled />
+                            </div>
+                            <div class="col-sm-6">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 form-actions">
+                        <div class="col-md-offset-3 col-md-9">
+                            <button class="btn btn-info" type="button">
+                                <i class="ace-icon fa fa-check bigger-110"></i>
+                                Submit
+                            </button>
+
+                            &nbsp; &nbsp; &nbsp;
+                            <button class="btn" type="reset">
+                                <i class="ace-icon fa fa-undo bigger-110"></i>
+                                Reset
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+
+
+    </div>
+</div>
+
