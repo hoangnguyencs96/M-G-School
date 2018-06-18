@@ -300,8 +300,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Assets/js/JavaScript.js">
       <publishTime>06/13/2018 07:37:04</publishTime>
     </File>
+    <File Include="Assets/js/jQuerySession.js">
+      <publishTime>06/18/2018 13:52:26</publishTime>
+    </File>
     <File Include="Assets/js/main.js">
       <publishTime>06/12/2018 20:51:02</publishTime>
+    </File>
+    <File Include="Assets/js/Student.js">
+      <publishTime>06/18/2018 14:03:33</publishTime>
     </File>
     <File Include="Assets/vendor/animate/animate.css">
       <publishTime>06/12/2018 20:51:02</publishTime>
@@ -411,14 +417,434 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Assets/vendor/select2/select2.min.js">
       <publishTime>06/12/2018 20:51:02</publishTime>
     </File>
+    <File Include="Assets/View/css/ace-ie.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/ace-part2.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/ace-rtl.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/ace-skins.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/ace.min.css">
+      <publishTime>06/16/2018 18:18:18</publishTime>
+    </File>
+    <File Include="Assets/View/css/bootstrap-colorpicker.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/bootstrap-datepicker3.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/bootstrap-datetimepicker.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/bootstrap-duallistbox.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/bootstrap-editable.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/bootstrap-multiselect.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/bootstrap-timepicker.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/bootstrap.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/chosen.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/colorbox.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/daterangepicker.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/dropzone.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/font-awesome.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/fonts.googleapis.com.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/fullcalendar.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/images/meteorshower2.jpg">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/images/pattern.jpg">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/jquery-ui.custom.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/jquery-ui.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/jquery.gritter.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/prettify.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/select2.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/css/ui.jqgrid.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/font-awesome/4.5.0/css/font-awesome.min.css">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/font-awesome/4.5.0/fonts/fontawesome-webfont.eot">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/font-awesome/4.5.0/fonts/fontawesome-webfont.svg">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/font-awesome/4.5.0/fonts/fontawesome-webfont.ttf">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/font-awesome/4.5.0/fonts/fontawesome-webfont.woff">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/font-awesome/4.5.0/fonts/fontawesome-webfont.woff2">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/images/avatars/avatar.png">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/images/avatars/avatar1.png">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/images/avatars/avatar2.png">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/images/avatars/avatar3.png">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/images/avatars/avatar4.png">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/images/avatars/avatar5.png">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/images/avatars/profile-pic.jpg">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/images/avatars/user.jpg">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/images/bootstrap-colorpicker/alpha-horizontal.png">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/images/bootstrap-colorpicker/alpha.png">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/images/bootstrap-colorpicker/hue-horizontal.png">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/images/bootstrap-colorpicker/hue.png">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/images/bootstrap-colorpicker/saturation.png">
+      <publishTime>06/16/2018 16:10:17</publishTime>
+    </File>
+    <File Include="Assets/View/images/email/email1.png">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/email/email2.png">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/email/email3.png">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/email/email4.png">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/gallery/image-1.jpg">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/gallery/image-2.jpg">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/gallery/image-3.jpg">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/gallery/image-4.jpg">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/gallery/image-5.jpg">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/gallery/image-6.jpg">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/gallery/thumb-1.jpg">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/gallery/thumb-2.jpg">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/gallery/thumb-3.jpg">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/gallery/thumb-4.jpg">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/gallery/thumb-5.jpg">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/gallery/thumb-6.jpg">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/placeholder/165x90.png">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/placeholder/255x150.png">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/placeholder/530x270.png">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/images/placeholder/550x280.png">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/ace-editable.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/ace-elements.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/ace-extra.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/ace.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/autosize.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/bootbox.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/bootstrap-colorpicker.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/bootstrap-datepicker.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/bootstrap-datetimepicker.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/bootstrap-editable.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/bootstrap-markdown.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/bootstrap-multiselect.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/bootstrap-tag.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/bootstrap-timepicker.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/bootstrap-wysiwyg.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/bootstrap.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/buttons.colVis.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/buttons.flash.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/buttons.html5.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/buttons.print.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/chosen.jquery.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/dataTables.bootstrap.min.js">
+      <publishTime>06/16/2018 19:43:05</publishTime>
+    </File>
+    <File Include="Assets/View/js/dataTables.buttons.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/dataTables.select.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/daterangepicker.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/dropzone.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/excanvas.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/fullcalendar.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/grid.locale-en.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/holder.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/html5shiv.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery-1.11.3.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery-2.1.4.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery-additional-methods.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery-typeahead.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery-ui.custom.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery-ui.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.bootstrap-duallistbox.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.colorbox.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.dataTables.bootstrap.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.dataTables.min.js">
+      <publishTime>06/18/2018 01:53:44</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.easypiechart.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.flot.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.flot.pie.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.flot.resize.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.gritter.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.hotkeys.index.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.inputlimiter.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.jqGrid.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.knob.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.maskedinput.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.mobile.custom.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.nestable.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.raty.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.sparkline.index.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.ui.touch-punch.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/jquery.validate.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/markdown.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/moment.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/prettify.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/respond.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/select2.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/spin.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/spinbox.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/tree.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/js/wizard.min.js">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
+    <File Include="Assets/View/swf/flashExport.swf">
+      <publishTime>06/16/2018 16:10:18</publishTime>
+    </File>
     <File Include="bin/ApplicationInsights.config">
       <publishTime>06/12/2018 20:43:08</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
-      <publishTime>06/13/2018 11:18:41</publishTime>
+      <publishTime>06/12/2018 20:43:10</publishTime>
     </File>
     <File Include="bin/EntityFramework.SqlServer.dll">
-      <publishTime>06/13/2018 11:18:41</publishTime>
+      <publishTime>06/12/2018 20:43:09</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>06/15/2018 01:11:52</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>06/12/2018 20:43:10</publishTime>
@@ -514,16 +940,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/12/2018 20:43:10</publishTime>
     </File>
     <File Include="bin/WebMauGiao.dll">
-      <publishTime>06/13/2018 11:22:04</publishTime>
+      <publishTime>06/18/2018 14:09:18</publishTime>
     </File>
     <File Include="bin/WebMauGiao.Service.dll">
-      <publishTime>06/13/2018 09:29:56</publishTime>
+      <publishTime>06/18/2018 14:09:17</publishTime>
     </File>
     <File Include="Global.asax">
       <publishTime>06/12/2018 20:43:08</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>06/13/2018 11:20:42</publishTime>
+      <publishTime>06/15/2018 01:31:07</publishTime>
     </File>
     <File Include="scripts/ai.0.22.9-build00167.js">
       <publishTime>06/12/2018 20:43:08</publishTime>
@@ -538,13 +964,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/13/2018 07:37:04</publishTime>
     </File>
     <File Include="Views/Home/Error.cshtml">
-      <publishTime>06/12/2018 21:29:38</publishTime>
+      <publishTime>06/16/2018 19:01:42</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>06/13/2018 07:37:04</publishTime>
+      <publishTime>06/16/2018 18:20:54</publishTime>
+    </File>
+    <File Include="Views/Home/ViewLog.cshtml">
+      <publishTime>06/17/2018 18:16:45</publishTime>
     </File>
     <File Include="Views/Login/Index.cshtml">
-      <publishTime>06/12/2018 21:44:36</publishTime>
+      <publishTime>06/16/2018 18:19:27</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>06/18/2018 13:52:26</publishTime>
+    </File>
+    <File Include="Views/Student/ClassArranger.cshtml">
+      <publishTime>06/17/2018 19:31:12</publishTime>
+    </File>
+    <File Include="Views/Student/ListStudent.cshtml">
+      <publishTime>06/18/2018 14:01:37</publishTime>
+    </File>
+    <File Include="Views/Student/RollCall.cshtml">
+      <publishTime>06/18/2018 13:52:26</publishTime>
     </File>
     <File Include="Views/Test/Index.cshtml">
       <publishTime>06/12/2018 21:34:02</publishTime>
@@ -556,7 +997,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/13/2018 09:59:01</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/13/2018 11:25:56</publishTime>
+      <publishTime>06/18/2018 14:15:18</publishTime>
     </File>
   </ItemGroup>
 </Project>

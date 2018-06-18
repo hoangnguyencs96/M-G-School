@@ -61,3 +61,5 @@ D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao\obj\Release\WebMa
 D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao\obj\Release\WebMauGiao.pdb
 D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao\bin\EntityFramework.SqlServer.dll
 D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao\bin\EntityFramework.SqlServer.xml
+D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao\bin\log4net.dll
+D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao\bin\log4net.xml

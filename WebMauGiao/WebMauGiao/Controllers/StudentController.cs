@@ -4,10 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using WebMauGiao.Service.Service;
-<<<<<<< HEAD
 using WebMauGiao.Service.Models;
-=======
->>>>>>> 742d03454a6ef64d1725900bd232e7c99d65f08f
+
 
 namespace WebMauGiao.Controllers
 {
@@ -35,7 +33,7 @@ namespace WebMauGiao.Controllers
         //    return View("");
         //}
 
-        public JsonResult GetStudentByClass(string Name)
+        public JsonResult GetStudentByClassName(string Name)
         {
             F_STUDENT f_student = new F_STUDENT();
             F_CLASS f_class = new F_CLASS();
