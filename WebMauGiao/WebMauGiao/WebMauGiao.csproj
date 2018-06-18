@@ -146,6 +146,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\js\jQuerySession.js" />
     <Content Include="Assets\js\Student.js" />
     <Content Include="Assets\View\css\ace-ie.min.css" />
     <Content Include="Assets\View\css\ace-part2.min.css" />
@@ -341,6 +342,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="bin\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

@@ -91,26 +91,6 @@ namespace WebMauGiao.Service.Models
                 .Property(e => e.Amount)
                 .HasPrecision(18, 0);
 
-            modelBuilder.Entity<LOG>()
-                .Property(e => e.Thread)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<LOG>()
-                .Property(e => e.Level)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<LOG>()
-                .Property(e => e.Logger)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<LOG>()
-                .Property(e => e.Message)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<LOG>()
-                .Property(e => e.Exception)
-                .IsUnicode(false);
-
             modelBuilder.Entity<MATERIAL>()
                 .Property(e => e.Price)
                 .HasPrecision(18, 0);
@@ -150,6 +130,10 @@ namespace WebMauGiao.Service.Models
             modelBuilder.Entity<STUDENT>()
                 .Property(e => e.BMI)
                 .HasPrecision(18, 0);
+
+            modelBuilder.Entity<STUDENT>()
+                .Property(e => e.Email)
+                .IsUnicode(false);
 
             modelBuilder.Entity<TIMEKEEPING>()
                 .Property(e => e.Value)

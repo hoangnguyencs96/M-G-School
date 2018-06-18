@@ -24,5 +24,7 @@ namespace WebMauGiao.Service.Models
 
         [Column(TypeName = "date")]
         public DateTime? EndTime { get; set; }
+
+        public bool? Status { get; set; }
     }
 }
