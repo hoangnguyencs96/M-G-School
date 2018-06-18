@@ -18,3 +18,13 @@ D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao.Service\bin\Debug
 D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao.Service\obj\Debug\WebMauGiao.Service.csprojResolveAssemblyReference.cache
 D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao.Service\obj\Debug\WebMauGiao.Service.dll
 D:\Tai lieu\Project\KidSchool\M-G-School\WebMauGiao\WebMauGiao.Service\obj\Debug\WebMauGiao.Service.pdb
+E:\Web Mau Giao source\Web Mau Giao Core\WebMauGiao\WebMauGiao.Service\bin\Debug\WebMauGiao.Service.dll.config
+E:\Web Mau Giao source\Web Mau Giao Core\WebMauGiao\WebMauGiao.Service\bin\Debug\WebMauGiao.Service.dll
+E:\Web Mau Giao source\Web Mau Giao Core\WebMauGiao\WebMauGiao.Service\bin\Debug\WebMauGiao.Service.pdb
+E:\Web Mau Giao source\Web Mau Giao Core\WebMauGiao\WebMauGiao.Service\bin\Debug\EntityFramework.dll
+E:\Web Mau Giao source\Web Mau Giao Core\WebMauGiao\WebMauGiao.Service\bin\Debug\EntityFramework.SqlServer.dll
+E:\Web Mau Giao source\Web Mau Giao Core\WebMauGiao\WebMauGiao.Service\bin\Debug\EntityFramework.xml
+E:\Web Mau Giao source\Web Mau Giao Core\WebMauGiao\WebMauGiao.Service\bin\Debug\EntityFramework.SqlServer.xml
+E:\Web Mau Giao source\Web Mau Giao Core\WebMauGiao\WebMauGiao.Service\obj\Debug\WebMauGiao.Service.csprojResolveAssemblyReference.cache
+E:\Web Mau Giao source\Web Mau Giao Core\WebMauGiao\WebMauGiao.Service\obj\Debug\WebMauGiao.Service.dll
+E:\Web Mau Giao source\Web Mau Giao Core\WebMauGiao\WebMauGiao.Service\obj\Debug\WebMauGiao.Service.pdb

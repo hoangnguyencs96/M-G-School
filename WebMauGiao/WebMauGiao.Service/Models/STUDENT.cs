@@ -43,5 +43,16 @@ namespace WebMauGiao.Service.Models
         public decimal? Weight { get; set; }
 
         public decimal? BMI { get; set; }
+
+        [StringLength(50)]
+        public string Folk { get; set; }
+
+        [StringLength(100)]
+        public string Email { get; set; }
+
+        public long? PriorityID { get; set; }
+
+        [StringLength(100)]
+        public string Religious { get; set; }
     }
 }
